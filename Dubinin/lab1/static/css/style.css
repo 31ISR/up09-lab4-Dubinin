@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 3rem;
+    color: white;
+}
+
+body {
+    display: flex;
+    background: #3d3d3d;
+    justify-content: center;
+    margin-top: 500px;
+}
