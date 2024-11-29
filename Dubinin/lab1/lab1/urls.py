@@ -21,4 +21,11 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about),
+    path('posts/', include('posts.urls')),
+    path('communities_list/', include('communities_list.urls')),
+
+    path('admin/', admin.site.urls),
+    path('', views.index),
+
+    
 ]

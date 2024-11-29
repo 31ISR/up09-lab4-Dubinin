@@ -10,5 +10,27 @@ body {
     display: flex;
     background: #3d3d3d;
     justify-content: center;
-    margin-top: 500px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+
+main {
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+h1 {
+    text-align: center;
 }
