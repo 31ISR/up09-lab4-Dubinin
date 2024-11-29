@@ -1,36 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-weight: 3rem;
-    color: white;
-}
-
-body {
-    display: flex;
-    background: #3d3d3d;
-    justify-content: center;
-    min-height: 100vh;
-    display: flex;
-    flex-flow: column;
-}
-
-
-main {
-    flex-grow: 1;
-    display: grid;
-    place-content: center;
+	color: rgb(0, 0, 0);
+	background: #d5e2ce;
 }
 
 a {
-    text-decoration: none;
-    color: #81dbb8;
+	text-decoration: none;
+	color: #81dbb8;
 }
 
 a:hover {
-    opacity: .85;
+	opacity: 0.85;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	border-radius: 20px;
+	background: #c2f1b0;
+	width: 800px;
+	margin: auto;
+	padding: 10px 0;
+	justify-content: space-around;
+}
+
+header a {
+	background: #ace709;
+	color: black;
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-box-shadow: 6px 11px 12px -2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 6px 11px 12px -2px rgba(0, 0, 0, 0.2);
+	box-shadow: 6px 11px 12px -2px rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+header a:hover {
+	background: #00b7ff;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center; /* Центрирование по горизонтали */
+	align-items: center; /* Центрирование по вертикали */
+	height: 90vh;
 }
 
 h1 {
-    text-align: center;
+	margin: 0;
 }

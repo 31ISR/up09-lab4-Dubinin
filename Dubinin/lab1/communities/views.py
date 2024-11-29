@@ -1,5 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
-def groupp(req):
-    return render(req, 'communities_list/groupp.html')
+def communities_list(req):
+    return render(req, 'communities/communities_list.html')
