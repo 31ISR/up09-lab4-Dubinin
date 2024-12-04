@@ -12,8 +12,8 @@
         <header>
             <a href="/">Главная страница</a>
             <a href="/about">Обо мне</a>
-            <a href="/posts">Посты</a>
-            <a href="/communities">Группы</a>
+            <a href="{% url 'posts' %}">Посты</a>
+            <a href="{% url 'comm' %}">Группы</a>
         </header>
         <div class="container">
             <main>{% block content %} {% endblock %}</main>
