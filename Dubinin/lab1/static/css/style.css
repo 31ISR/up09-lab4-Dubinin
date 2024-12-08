@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
 * {
 	color: rgb(0, 0, 0);
 	background: #d5e2ce;
@@ -78,4 +80,58 @@ header a:hover {
 
 h1 {
 	margin: 0;
+}
+
+.post_h1 {
+	margin-top: 300px;
+	text-align: center;
+}
+
+.post_h2 a {
+	color: red;
+	transition: 0.3s;
+}
+
+.post_h2 a:hover {
+	color: #00b7ff;
+}
+
+.post_date {
+	color: rgb(94, 91, 91);
+	font-size: 12px;
+}
+
+.post_body {
+	font-family: "PT Sans Narrow", serif;
+	font-size: 18px;
+	display: block;
+}
+
+.back {
+	color: red;
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+.back:hover {
+	background: black;
+}
+
+.comm_page p {
+	font-size: 20px;
+	font-family: "PT Sans Narrow", serif;
+}
+
+.comm_page {
+	width: 700px;
+}
+
+.post_pag {
+	width: 900px;
+	margin-top: 100px;
+}
+
+.post_pag .text {
+	font-size: 17px;
+	font-family: "PT Sans Narrow", serif;
 }

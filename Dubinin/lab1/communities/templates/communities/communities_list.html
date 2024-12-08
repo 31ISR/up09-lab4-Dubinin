@@ -2,10 +2,11 @@
 {% block content %}
 <section>
     <h1>Группы</h1>
-    
     {% for community in communities %}
-    <article class="communities">
-        <h2>{{ community.name }}</h2>
+    <article>
+        <h2>
+            <a href="{%  url 'communities:page' slug=community.slug %}"> {{ community.name }} </a>
+        </h2>
         <p>{{ community.date }}</p>
         <p>{{ community.description }}</p>
     </article>

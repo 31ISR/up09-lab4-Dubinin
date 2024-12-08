@@ -2,7 +2,9 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-urlpatterns = [
-    path('', views.communities_list, name="comm"),
+app_name = 'communities'
 
+urlpatterns = [
+    path('', views.communities_list, name="list"),
+    path('<slug:slug>', views.communitie_page, name="page")
 ]
