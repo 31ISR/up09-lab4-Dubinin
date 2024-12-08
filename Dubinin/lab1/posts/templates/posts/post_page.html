@@ -2,6 +2,7 @@
 {% block content %}
 <section class="post_pag">
   <a class="back" href="{% url 'posts:list' %}">Обратно</a>
+	<img class="banner" src="{{ post.banner.url }}" alt="{{ post.title }}" />
 	<h1>{{ post.title }}</h1>
 	<p class="post_date">{{ post.date }}</p>
 	<p class="text">{{ post.body }}</p>

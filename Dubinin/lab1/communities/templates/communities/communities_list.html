@@ -7,6 +7,7 @@
         <h2>
             <a href="{%  url 'communities:page' slug=community.slug %}"> {{ community.name }} </a>
         </h2>
+        <img class="banner-comm" src="{{ community.banner.url }}" alt="{{ community.title }}" />
         <p>{{ community.date }}</p>
         <p>{{ community.description }}</p>
     </article>

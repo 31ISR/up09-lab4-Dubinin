@@ -135,3 +135,14 @@ h1 {
 	font-size: 17px;
 	font-family: "PT Sans Narrow", serif;
 }
+
+.banner {
+	width: 300px;
+	height: 300px;
+}
+
+.banner-comm {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}

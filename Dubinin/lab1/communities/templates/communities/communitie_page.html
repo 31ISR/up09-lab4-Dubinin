@@ -1,6 +1,7 @@
 {% extends 'layout.html' %} {% block title %} {{ community.name }} {% endblock %}
 {% block content %}
 <section class="comm_page">
+    <img class="banner" src="{{ community.banner.url }}" alt="{{ community.title }}" />
     <a class="back" href="{% url 'communities:list' %}">Обратно</a>
     <h1>{{ community.name }}</h1>
     <p>{{ community.description }}</p>
