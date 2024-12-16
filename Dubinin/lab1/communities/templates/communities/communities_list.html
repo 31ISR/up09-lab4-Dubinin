@@ -1,0 +1,27 @@
+{% extends 'layout.html' %} {% block title %} Comm {% endblock %} 
+{% block content %}
+<section class="comm-main">
+	<h1 class="comm">Группы</h1>
+	{% for community in communities %}
+	<div class="list">
+		<h2 class="comm-zag">
+			<a href="{%  url 'communities:page' slug=community.slug %}">
+				{{ community.name }}
+			</a>
+		</h2>
+		<article class="com_list">
+			<img
+				class="banner-comm"
+				src="{{ community.banner.url }}"
+				alt="{{ community.title }}"
+			/>
+			<div class="cont-comm-text">
+				<p class="date">{{ community.date }}</p>
+				<p class="des">{{ community.description }}</p>
+			</div>
+		</article>
+	</div>
+
+	{% endfor %}
+</section>
+{% endblock %}

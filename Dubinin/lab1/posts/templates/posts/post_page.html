@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} {% block title %} {{ post.title }} {% endblock %} 
+{% block content %}
+<a class="back" href="{% url 'posts:list' %}">Обратно</a>
+<section class="post_pag">
+	<img class="banner" src="{{ post.banner.url }}" alt="{{ post.title }}" />
+	<div class="page-text">
+		<h1>{{ post.title }}</h1>
+		<p class="post_date">{{ post.date }}</p>
+		<p class="text"><span>Описание: </span>{{ post.body }}</p>
+		<p class="text"><span>Автор: </span>{{ post.author }}</p>
+	</div>
+</section>
+{% endblock %}
