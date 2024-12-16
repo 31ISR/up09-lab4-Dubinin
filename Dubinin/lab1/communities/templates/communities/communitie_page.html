@@ -1,10 +1,12 @@
 {% extends 'layout.html' %} {% block title %} {{ community.name }} {% endblock %}
 {% block content %}
+<a class="back" href="{% url 'communities:list' %}">Обратно</a>
 <section class="comm_page">
     <img class="banner" src="{{ community.banner.url }}" alt="{{ community.title }}" />
-    <a class="back" href="{% url 'communities:list' %}">Обратно</a>
-    <h1>{{ community.name }}</h1>
-    <p>{{ community.description }}</p>
-    <p>{{ community.author }}</p>
+    <div class="page-text">
+        <h2>{{ community.name }}</h2>
+        <p><span>Описание:</span> {{ community.description }}</p>
+        <p><span>Автор:</span>  {{ community.author }}</p>
+    </div>
 </section>
 {% endblock %}

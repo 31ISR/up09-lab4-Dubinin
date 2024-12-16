@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block content %}
-    <section>
-        <h1>New Communitie</h1>
+    <section class="new-post-cont">
+        <h1>Новая группа</h1>
         <form class="form-with-validation" action="{% url 'communities:new-communitie' %}" method="post" enctype="multipart/form-data">
-            {% csrf_token %} 
-            {{ form }}
+            <div class="csrf">{% csrf_token %} </div>
+            <div class="form">{{ form }}</div>
             <button class="form-submit">Добавить группу</button>
         </form>
     </section>
